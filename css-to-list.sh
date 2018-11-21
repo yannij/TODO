@@ -1,4 +1,4 @@
-grep '^\.mdc-' ~/foo \
+grep '[ ]*  \.mdc-' mdc.css \
 | awk -F' ' '{for (i = 0; ++i <= NF;) print $i}' \
 | awk -F',' '{for (i = 0; ++i <= NF;) print $i}' \
 | awk -F'+' '{for (i = 0; ++i <= NF;) print $i}' \
